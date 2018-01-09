@@ -328,7 +328,7 @@ console.log(eatBFast);
 
 function shoeSize(inches){
 	/*var*/ cm = inches * 2.54;
-	return inches + "in = " + cm + "cm"
+	return inches + "in = " + cm + "cm";
 }
 shoeSize(9);
 
