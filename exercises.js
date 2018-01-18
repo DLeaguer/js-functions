@@ -143,7 +143,6 @@ function checkSum(x){
 checkSum(2);
 
 var daDiva = checkSum(2);
-console.log(daDiva);
 
 
 /*
@@ -240,6 +239,8 @@ function addThenSubtract(num1, num2, num3){
 //	return num3 - (num1 + num2);
 	var sum = add(num1, num2);
 	return subtract(num3, sum);
+	return subtract(num3, add(num1, num2));
+
 }
 addThenSubtract(bango3, bango4, bango5);
 
@@ -367,13 +368,16 @@ console.log(capAll);
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
+//var uplifting =  "believe you can and you're halfway there.";
 
 function oneCap(str){
 	var firstCap = str.charAt(0);
 	var beginCap = firstCap.toUpperCase();
 	return beginCap + believe.slice(1, 41);
+	//return beginCap + str.slice(1, 41);
 }
 oneCap(believe);
+
 var capOne = oneCap(believe);
 console.log(oneCap(believe));
 
