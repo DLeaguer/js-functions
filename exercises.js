@@ -27,6 +27,13 @@ console.log(testGreeting); // printing the output value of the function.
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
 
+console.log('');
+console.log('	1. Declare two variables: ');
+
+var bango1 = 5;
+var bango2 = 2;
+console.log('bango1 = ' + bango1);
+console.log('bango2 = ' + bango2);
 
 
 /*
@@ -44,7 +51,16 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `sum` to test your code.
 */
 
+console.log('');
+console.log('	2. add: ');
 
+function add(num1, num2){
+	return num1 + num2;
+}
+add(bango1, bango2);
+
+var sum = add(bango1, bango2);
+console.log('sum = ' + sum);
 
 /*
  * #3
@@ -60,7 +76,17 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `difference` to test your code.
 */ 
 
+console.log('');
+console.log('	3. subtract: ');
 
+function subtract(num1, num2){
+	return num1 - num2;
+}
+subtract(bango1, bango2);
+
+
+var difference = subtract(bango1, bango2);
+console.log('difference = ' + difference);
 
 /*
  * #4
@@ -76,7 +102,16 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `product` to test your code.
 */
 
+console.log('');
+console.log('	4. multiply: ');
 
+function multiply(num1, num2){
+	return num1 * num2;
+}
+multiply(bango1, bango2);
+
+var product = multiply(bango1, bango2);
+console.log('product = ' + product);
 
 /*
  * #5
@@ -92,7 +127,16 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `quotient` to test your code.
 */
 
+console.log('');
+console.log('	5. divide: ');
 
+function divide(num1, num2){
+	return num1 / num2;
+}
+divide(bango1, bango2);
+
+var quotient = divide(bango1, bango2);
+console.log('quotient = ' + quotient);
 
 /*
  * #6
@@ -106,7 +150,16 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
+console.log('');
+console.log('	6. checkSum: ');
 
+function checkSum(x){
+	return 'Mariah Carey has been married ' + x + ' amount of times.';
+}
+checkSum(2);
+
+var daDiva = checkSum(2);
+console.log('daDiva = ' + daDiva);
 
 /*
  * #7
@@ -120,7 +173,15 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your results.
 */ 
 
+console.log('');
+console.log('	7. checkDifference: ');
 
+function checkDifference(x){
+	return 'Last night I dreamt that I ate ' + x + ' Taco Bell soft tacos';
+}
+checkDifference(difference);
+
+console.log(checkDifference('checkDifference = ' + difference));
 
 /*
  * #8
@@ -133,7 +194,16 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
+console.log('');
+console.log('	8. checkProduct: ');
 
+function checkProduct(){
+	return sum * product;
+}
+var sumpro = sum * product;
+checkProduct(sumpro);
+
+console.log('checkProduct = ' + sumpro);
 
 /*
  * #9
@@ -145,6 +215,17 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the product and quotient variables.
  * Console.log your result.  
 */
+
+console.log('');
+console.log('	9. checkQuotient: ');
+
+function checkQuotient(){
+	return product * quotient;
+}
+var proquo = product * quotient;
+checkQuotient(proquo);
+
+console.log('checkQuotient = ' + proquo);
 
 /*
  * Declare three variables
@@ -166,7 +247,28 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
+console.log('');
+console.log('	Declare three variables: ');
 
+var bango3 = 5;
+var bango4 = 20;
+var bango5 = 30;
+console.log('bango3 = ' + bango3);
+console.log('bango4 = ' + bango4);
+console.log('bango5 = ' + bango5);
+
+
+
+console.log('');
+console.log('	10. addThenSubtract: ');
+
+function addThenSubtract(num1, num2, num3){
+	var sum = num1 + num2;
+	return num3 - sum;
+}
+addThenSubtract(bango3, bango4, bango5);
+
+console.log('addThenSubtract = ' + addThenSubtract(bango3, bango4, bango5));
 
 /*
  * #11
@@ -182,6 +284,16 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
+console.log('');
+console.log('	11. multiplyThenDivide: ');
+
+function multiplyThenDivide(num1, num2, num3){
+	var product = num1 * num2;
+	return num3 / product;
+}
+multiplyThenDivide(bango3, bango4, bango5);
+
+console.log('multiplyThenDivide = ' + multiplyThenDivide(bango3, bango4, bango5));
 
 
 /*
@@ -196,6 +308,16 @@ console.log(testGreeting); // printing the output value of the function.
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
+console.log('');
+console.log('	12. createFullName: ');
+
+function createFullName(firstName, lastName){
+	return firstName + ' ' + lastName;
+}
+createFullName('Jeffrey', 'Becera');
+
+var myFullName = createFullName('Jeffrey', 'Becera');
+console.log('myFullName is ' + myFullName);
 
 
 /*
@@ -212,7 +334,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
  */
 
+console.log('');
+console.log('	13. eatFood: ');
 
+function eatFood(firstName, lastName, food){
+	return firstName + ' ' + lastName + ' eats ' + food + ' everyday for breakfast.';
+}
+console.log(eatFood('Biggie', 'Smalls', 'Won Ton soup'));
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -227,7 +355,14 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result. 
 */
 
+console.log('');
+console.log('	14. shoeSize: ');
 
+function shoeSize(inches){
+	var cm = inches * 2.54;
+	return cm;
+}
+console.log('shoeSize = ' + shoeSize(9.5) + 'cm');
 
 /*
  * #15
@@ -239,7 +374,15 @@ console.log(testGreeting); // printing the output value of the function.
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+console.log('');
+console.log('	15. allCaps: ');
 
+ var believe = "believe you can and you're halfway there.";
+
+function allCaps(str){
+	return believe.toUpperCase();
+}
+console.log(allCaps(believe));
 
 /*
  * #16
@@ -249,7 +392,15 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
+console.log('');
+console.log('	16. oneCap: ');
 
+// console.log(believe.length);
+
+function oneCap(str){
+	return believe.charAt(0).toUpperCase() + believe.slice(1, 41);
+}
+console.log(oneCap(believe));
 
 /*
  * #17
@@ -262,7 +413,23 @@ console.log(testGreeting); // printing the output value of the function.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
+console.log('');
+console.log('	17. verifyDrinkingAge: ');
 
+function verifyDrinkingAge(age){
+	if (age >= 21){
+		return true;
+	}else{
+		return false;
+	}
+}
+verifyDrinkingAge(0);
+var canDrink = verifyDrinkingAge(19);
+console.log(canDrink);
+
+verifyDrinkingAge(0);
+var canDrink = verifyDrinkingAge(22);
+console.log(canDrink);
 
 /**
  * #18
@@ -270,6 +437,27 @@ console.log(testGreeting); // printing the output value of the function.
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
+console.log('');
+console.log('	18. throwParty: ');
+
+function throwParty(){
+	if (canDrink === true){
+		return 'Cheee Hoo! We going to da party!';
+	}else{
+		return 'Meh, see you at Starbucks';
+	}
+}
+throwParty(canDrink);
+var canParty = throwParty(canDrink);
+console.log(canParty);
+
+verifyDrinkingAge(0);
+var canDrink = verifyDrinkingAge(19);
+console.log('');
+
+throwParty(canDrink);
+var canParty = throwParty(canDrink);
+console.log(canParty);
 
 
 
